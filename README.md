@@ -13,7 +13,7 @@
 * 문법: 아래
 
 
-
+“`
     grammar chessorder;
     
     <chess> = <pieces> <alpha> <numbers>;
@@ -24,8 +24,9 @@
     
     <numbers> = one | two | three | four | five | six | seven | eight;
 
-public <chessorder> = <chess>;
+    public <chessorder> = <chess>;
 
+“`
 
 ### Test script
 
