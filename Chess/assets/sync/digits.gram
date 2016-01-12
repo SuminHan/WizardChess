@@ -1,0 +1,11 @@
+#JSGF V1.0;
+
+grammar digits;
+
+<digit> = <pieces> <alpha> <numbers>;
+
+<pieces> = pawn | rook | knight | bishop | king | queen;
+<alpha> = alpha | bravo | charlie | delta | eco | foxtrot | golf | hotel;
+<numbers> = one | two | three | four | five | six | seven | eight;
+
+public <digits> = <digit>;

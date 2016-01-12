@@ -1,0 +1,13 @@
+#JSGF V1.0;
+
+grammar chessorder;
+
+<chess> = <pieces> <alpha> <numbers>;
+
+<pieces> = <order> pawn | <order> rook | <order> knight | <order> bishop | king | queen;
+
+<alpha> = alpha | bravo | charlie | delta | eco | foxtrot | golf | hotel;
+<numbers> = one | two | three | four | five | six | seven | eight;
+<order> = first | second | third | fourth | fifth | sixth | seventh | eighth;
+
+public <chessorder> = <chess>;
