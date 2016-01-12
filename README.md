@@ -13,10 +13,15 @@
 * 문법: 아래
 
 
+
     grammar chessorder;
+    
     <chess> = <pieces> <alpha> <numbers>;
+    
     <pieces> = pawn | rook | knight | bishop | king | queen;
+    
     <alpha> = alpha | bravo | charlie | delta | eco | foxtrot | golf | hotel;
+    
     <numbers> = one | two | three | four | five | six | seven | eight;
 
 public <chessorder> = <chess>;
