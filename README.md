@@ -10,12 +10,11 @@
 
 * 특징: 키워드 음성인식을 이용하여 체스말을 이동시켰습니다. 유니티가 안드로이드 위에서 돌아감에도 불구하고, 안드로이드에서 유니티로 통신이 안되었기 때문에, 안드로이드에서 Speech Recognition을 구현하고 이를 서버에 쏘면 이 data를 분석하여 다시 유니티로 쏴주는 방식을 이용하였습니다.
 
-* 문법: 
+* 문법: 아래
+
 
     grammar chessorder;
-
     <chess> = <pieces> <alpha> <numbers>;
-
     <pieces> = pawn | rook | knight | bishop | king | queen;
     <alpha> = alpha | bravo | charlie | delta | eco | foxtrot | golf | hotel;
     <numbers> = one | two | three | four | five | six | seven | eight;
