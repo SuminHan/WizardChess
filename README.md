@@ -12,7 +12,7 @@
 
 * 문법: 
 
-
+"`
 grammar chessorder;
 
 <chess> = <pieces> <alpha> <numbers>;
@@ -22,19 +22,21 @@ grammar chessorder;
 <numbers> = one | two | three | four | five | six | seven | eight;
 
 public <chessorder> = <chess>;
-
+`"
 
 ### Test script
 
 1.
+
 W: Oh mighty wizard, fifth pawn eco four.
 B: Oh mighty wizard, fifth pawn eco five.
 W: Oh mighty wizard, queen hotel five.
 B: Oh mighty wizard, king eco seven.
 W: Oh mighty wizard, queen eco five.
-<< check mate >>
+check mate
 
 2.
+
 W: Oh mighty wizard, fifth pawn eco four.
 B: Oh mighty wizard, fifth pawn eco five.
 W: Oh mighty wizard, second bishop charlie four.
@@ -42,4 +44,4 @@ B: Oh mighty wizard, first knight charlie six.
 W: Oh mighty wizard, queen foxtrot three.
 B: Oh mighty wizard, fourth pawn delta six.
 W: Oh mighty wizard, queen foxtrot seven.
-<< check mate >>
+check mate
