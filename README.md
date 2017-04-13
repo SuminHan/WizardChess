@@ -13,7 +13,6 @@
 * Grammar: Below
 
 ```
-
 grammar chessorder;
     
 <chess> = <pieces> <alpha> <numbers>;
@@ -25,7 +24,6 @@ grammar chessorder;
 <numbers> = one | two | three | four | five | six | seven | eight;
 
 public <chessorder> = <chess>;
-
 ```
 
 ### Test script
